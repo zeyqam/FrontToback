@@ -2,9 +2,11 @@
 
 
 
+
 <!-- Start Banner Hero -->
 <div class="banner-wrapper bg-light">
-    <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
+    <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5" style="background-position: center center; background-size: cover; height: 100%; min-height: 60vh; width: 100%; background-image: url(@ViewBag.BackgroundImageUrl);")">
+        >
 
         <!-- Start slider -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -22,7 +24,7 @@
                     {
                         active = "active";
                     }
-                    <div class="carousel-item @active">
+                    <div class="carousel-item @active" >
 
                         <div class="py-5 row d-flex align-items-center">
                             <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
@@ -30,7 +32,7 @@
                                     @slider.Title
                                 </h1>
                                 <p class="banner-body text-muted py-3 mx-0 px-0">
-                                    Purple Buzz is a corporate HTML template with Bootstrap 5 Beta 1. This CSS template is 100% free to download provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>. Total 6 HTML pages included in this template. Icon fonts by <a rel="nofollow" href="https://boxicons.com/" target="_blank">Boxicons</a>. Photos are from <a rel="nofollow" href="https://unsplash.com/" target="_blank">Unsplash</a> and <a rel="nofollow" href="https://icons8.com/" target="_blank">Icons 8</a>.
+                                   @slider.Description 
                                 </p>
                                 <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="#" role="button">Get Started</a>
                             </div>

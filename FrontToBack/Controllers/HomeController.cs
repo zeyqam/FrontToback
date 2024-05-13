@@ -15,6 +15,8 @@ namespace FrontToBack.Controllers
         public async Task< IActionResult> Index()
         {
             List<Slider> sliders = await _context.Sliders.ToListAsync();
+            string backgroundImageUrl = await _context.Images.Select(m => m.Url).FirstOrDefaultAsync();
+            ViewBag.BackgroundImageUrl = backgroundImageUrl;
             return View(sliders);
         }
     }

@@ -11,5 +11,6 @@ namespace FrontToBack.Data
 
         }
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<SliderImage> Images { get; set; }
     }
 }
